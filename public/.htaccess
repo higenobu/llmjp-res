@@ -1,0 +1,17 @@
+# Block direct access to internal files
+<FilesMatch "^(config|functions|auth)\.php$">
+    Require all denied
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule ^(controllers|models|views)/ - [F,L]
+
+# Disable directory listing
+Options -Indexes
+
+# Security headers (requires mod_headers)
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set Referrer-Policy "same-origin"
+</IfModule>
