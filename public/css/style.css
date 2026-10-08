@@ -1,0 +1,12 @@
+body { font-family: sans-serif; max-width: 900px; margin: 20px auto; padding: 0 1rem; }
+h1 { color: #333; }
+nav a { margin-right: 1rem; }
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+.msg { padding: .5rem 1rem; border-radius: 4px; margin: .5rem 0; }
+.msg.error { background: #fdecea; color: #b00020; }
+.msg.success { background: #e8f5e9; color: #1b5e20; }
+label { display: block; margin-bottom: .8rem; }
+form.inline { display: inline; }
